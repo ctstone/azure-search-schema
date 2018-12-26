@@ -1,15 +1,19 @@
 {
-  "name": "azure-search-schema",
+  "name": "azure-search-types",
   "version": "1.0.4",
-  "description": "",
+  "description": "Azure Search type definitions",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "postinstall": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctstone/azure-search-schema"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Chris Stone",
   "license": "MIT",
   "devDependencies": {
     "tslint": "^5.12.0",
