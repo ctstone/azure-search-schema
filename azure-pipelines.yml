@@ -19,9 +19,9 @@ jobs:
 
       # Build the package
       - script: |
-        set -e
-        npm install
-        npm run build
+          set -e
+          npm install
+          npm run build
 
       # Copy the build
       - task: CopyFiles@2
