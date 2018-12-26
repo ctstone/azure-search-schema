@@ -43,7 +43,7 @@ jobs:
       vmImage: ubuntu-16.04
     steps:
 
-      - checkout:
+      - checkout: self
         persistCredentials: true
 
       # Install Nodejs
