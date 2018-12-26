@@ -57,10 +57,10 @@ jobs:
           npm --no-git-tag-version version patch
           git config user.name CI
           git config user.email chstone@microsoft.com
-          git pull origin HEAD:$(Build.SourceBranch	)
+          git pull origin HEAD:$(Build.SourceBranch)
           git add package*.json
           git commit -m "bump package.json ***NO_CI***"
-          git push origin HEAD:$(Build.SourceBranch	)
+          git push origin HEAD:$(Build.SourceBranch)
 
       # Download the build
       - task: DownloadPipelineArtifact@0
