@@ -36,7 +36,7 @@ jobs:
           targetPath: $(Build.ArtifactStagingDirectory)
   
   # Job 2: Publish NPM
-  - job: Publish NPM
+  - job: Publish
     dependsOn: Build
     condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
     pool:
