@@ -69,7 +69,8 @@ jobs:
           targetPath: $(Build.ArtifactStagingDirectory)/$(buildArtifactName)
 
       # Publish the package
-      - task: Npm@1
-        inputs:
-          command: publish
-          workingDir: $(Build.ArtifactStagingDirectory)/$(buildArtifactName)
+      - script: npm publish
+      # - task: Npm@1
+      #   inputs:
+      #     command: publish
+      #     workingDir: $(Build.ArtifactStagingDirectory)/$(buildArtifactName)
