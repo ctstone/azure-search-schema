@@ -1,6 +1,8 @@
+import { Point } from 'geojson';
+
 import { List } from '..';
 
-export type FieldValue = string | number | boolean | string[] | GeoPoint | Date | any;
+export type FieldValue = string | number | boolean | string[] | Point | Date | any;
 
 export enum QueryType {
   simple = 'simple',
@@ -10,10 +12,6 @@ export enum QueryType {
 export enum SearchMode {
   any = 'any',
   all = 'all',
-}
-
-export enum GeoType {
-  point = 'Point',
 }
 
 export interface Query {
@@ -53,14 +51,6 @@ export interface FacetRange {
 export interface Facet {
   value: FieldValue;
   count: number;
-}
-
-export interface GeoPoint {
-  type: GeoType.point;
-  /**
-   * [longitude, latitude]
-   */
-  coordinates: [ number, number ];
 }
 
 export interface Document {
