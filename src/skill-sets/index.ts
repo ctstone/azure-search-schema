@@ -24,7 +24,7 @@ export type Skill = EntityRecognitionSkill
 
 export interface SkillSet {
   name: string;
-  description: string;
+  description?: string;
   skills: Skill[];
 }
 
