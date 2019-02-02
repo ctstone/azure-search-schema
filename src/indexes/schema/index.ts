@@ -20,7 +20,7 @@ export enum SuggestSearchMode {
 }
 
 export interface Index {
-  name?: string;
+  name: string;
   fields: Field[];
   suggesters?: Suggester[];
   scoringProfiles?: ScoringProfile[];
