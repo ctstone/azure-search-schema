@@ -35,7 +35,7 @@ export interface Query {
 }
 
 export interface Facets {
-  [field: string]: Facet & FacetRange;
+  [field: string]: Array<Facet & FacetRange>;
 }
 
 export interface Highlights {
